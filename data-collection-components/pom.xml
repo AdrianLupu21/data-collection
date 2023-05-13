@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.smartmug.components</groupId>
+        <artifactId>data-collection</artifactId>
+        <version>develop-SNAPSHOT</version>
+    </parent>
+    <properties>
+        <java.version>11</java.version>
+        <nexus.url.release>http://85.204.43.222:8080/nexus/content/repositories/releases/</nexus.url.release>
+        <nexus.url.snapshot>http://85.204.43.222:8080/nexus/content/repositories/snapshots/</nexus.url.snapshot>
+    </properties>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>data-collection-components</artifactId>
+
+    <modules>
+        <module>telemetrics</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>${nexus.url.release}</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>${nexus.url.snapshot}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

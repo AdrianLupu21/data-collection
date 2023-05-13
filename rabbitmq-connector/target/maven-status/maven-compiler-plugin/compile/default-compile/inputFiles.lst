@@ -1,0 +1,5 @@
+/Users/adrianlupu/Downloads/data-collection/rabbitmq-connector/src/main/java/com/smartmug/rabbitmq/configuration/RabbitMQConfiguration.java
+/Users/adrianlupu/Downloads/data-collection/rabbitmq-connector/src/main/java/com/smartmug/rabbitmq/events/UpdateDiagnosticsTemplateEvent.java
+/Users/adrianlupu/Downloads/data-collection/rabbitmq-connector/src/main/java/com/smartmug/rabbitmq/publisher/SendTemplateEventPublisher.java
+/Users/adrianlupu/Downloads/data-collection/rabbitmq-connector/src/main/java/com/smartmug/rabbitmq/events/SentTemplateEvent.java
+/Users/adrianlupu/Downloads/data-collection/rabbitmq-connector/src/main/java/com/smartmug/rabbitmq/publisher/UpdateTemplateEventPublisher.java

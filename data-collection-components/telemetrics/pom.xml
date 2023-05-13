@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.smartmug.components</groupId>
+        <artifactId>data-collection-components</artifactId>
+        <version>develop-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>telemetrics</artifactId>
+    <properties>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <nexus.url.release>http://85.204.43.222:8080/nexus/content/repositories/releases/</nexus.url.release>
+        <nexus.url.snapshot>http://85.204.43.222:8080/nexus/content/repositories/snapshots/</nexus.url.snapshot>
+    </properties>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>${nexus.url.release}</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>${nexus.url.snapshot}</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.components</groupId>
+            <artifactId>rabbitmq-connector</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.components</groupId>
+            <artifactId>device-configuration-client</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.interface</groupId>
+            <artifactId>message-templates</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.spullara.mustache.java</groupId>
+            <artifactId>compiler</artifactId>
+            <version>0.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-json-schema</artifactId>
+            <version>4.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            <version>4.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug</groupId>
+            <artifactId>device-management-client</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

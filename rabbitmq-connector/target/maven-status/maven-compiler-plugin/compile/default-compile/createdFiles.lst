@@ -1,0 +1,5 @@
+com/smartmug/rabbitmq/publisher/UpdateTemplateEventPublisher.class
+com/smartmug/rabbitmq/events/SentTemplateEvent.class
+com/smartmug/rabbitmq/configuration/RabbitMQConfiguration.class
+com/smartmug/rabbitmq/events/UpdateDiagnosticsTemplateEvent.class
+com/smartmug/rabbitmq/publisher/SendTemplateEventPublisher.class

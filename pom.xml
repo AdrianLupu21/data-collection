@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.smartmug.components</groupId>
+    <artifactId>data-collection</artifactId>
+    <packaging>pom</packaging>
+    <version>develop-SNAPSHOT</version>
+    <modules>
+        <module>data-collection-components</module>
+        <module>rabbitmq-connector</module>
+    </modules>
+
+    <properties>
+        <java.version>11</java.version>
+        <nexus.url.release>http://85.204.43.222:8080/nexus/content/repositories/releases/</nexus.url.release>
+        <nexus.url.snapshot>http://85.204.43.222:8080/nexus/content/repositories/snapshots/</nexus.url.snapshot>
+        <revision>develop-SNAPSHOT</revision>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>${nexus.url.release}</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>${nexus.url.snapshot}</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.smartmug.boms</groupId>
+                <artifactId>boms</artifactId>
+                <version>develop-SNAPSHOT</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.smartmug.interface:message-templates:develop-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/smartmug/interface/message-templates/develop-SNAPSHOT/message-templates-develop-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/smartmug/interface/message-templates/develop-SNAPSHOT/message-templates-develop-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/smartmug/interface/message-templates/develop-SNAPSHOT/message-templates-develop-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
